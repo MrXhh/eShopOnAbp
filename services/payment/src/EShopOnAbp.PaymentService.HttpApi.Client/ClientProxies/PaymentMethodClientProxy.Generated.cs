@@ -17,7 +17,7 @@ namespace EShopOnAbp.PaymentService.Controllers.ClientProxies;
 public partial class PaymentMethodClientProxy : ClientProxyBase<IPaymentMethodAppService>, IPaymentMethodAppService
 {
     public virtual async Task<List<PaymentMethodDto>> GetListAsync()
-        {
-            return await RequestAsync<List<PaymentMethodDto>>(nameof(GetListAsync));
-        }
+    {
+        return await RequestAsync<List<PaymentMethodDto>>(nameof(GetListAsync));
+    }
 }
